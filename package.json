@@ -1,0 +1,25 @@
+{
+  "name": "@kz-ts/ts-express",
+  "version": "0.0.1",
+  "description": "Common library designed to use express with typescript",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
+  },
+  "author": "Shubham Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "express": "^4.17.2",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "del-cli": "^4.0.1",
+    "typescript": "^4.5.4"
+  }
+}
